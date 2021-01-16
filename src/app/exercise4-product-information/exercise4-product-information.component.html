@@ -1,0 +1,22 @@
+<app-exercise4-search-reflect></app-exercise4-search-reflect>
+<h1>Product Details</h1>
+<table border="3">
+  <tr>
+    <th>Image</th>
+    <th>Product Name</th>
+    <th>Product Code</th>
+    <th>Branch Name</th>
+    <th>Branch Code</th>
+    <th>Shipping Address</th>
+    <th>Details</th>
+  </tr>
+  <tr *ngFor="let data of information">
+    <td><img [src] = "data.ImageSource" [height]=ImageHeight [width]=ImageWidth></td>
+    <td>{{data.ProductName}}</td>
+    <td>{{data.ProductCode}}</td>
+    <td>{{data.BranchName}}</td>
+    <td>{{data.BranchCode}}</td>
+    <td>{{data.ShippingAddress}}</td>
+    <td><button (click)='viewData(data)'>Details</button></td>
+  </tr>
+</table>

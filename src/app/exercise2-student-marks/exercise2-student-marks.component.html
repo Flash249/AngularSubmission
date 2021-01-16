@@ -1,0 +1,17 @@
+<p>Student marks!</p>
+<table border='3'>
+    <tr>
+        <th>Name</th>
+        <th>Subject1</th>
+        <th>Subject1</th>
+        <th>Subject1</th>
+        <th>Average</th>
+    </tr>
+    <tr *ngFor = "let data of information">
+        <td>{{data.Name}}</td>
+        <td>{{data.Subject1}}</td>
+        <td>{{data.Subject2}}</td>
+        <td>{{data.Subject3}}</td>
+        <td>{{average(data)}}</td>
+    </tr>
+</table>
